@@ -9,8 +9,9 @@ import { User } from "next-auth";
 const font = Instrument_Sans({
   weight: "600",
   subsets: ["latin"],
+  display: 'swap', adjustFontFallback: false
 });
-const font_2 = Ubuntu({ weight: "700", subsets: ["latin"] });
+const font_2 = Ubuntu({ weight: "700", subsets: ["latin"] , display: 'swap', adjustFontFallback: false});
 
 type LandingHeroProps = {
   user?: User;
